@@ -1,10 +1,9 @@
 
 import openai
-import os
 import time
 import threading
 
-
+# This function is responsible for prompting chatGPT to generate playbooks
 def generate_playbook(prompt, model_name, conversation_history):
     def api_call():
         nonlocal response
@@ -33,6 +32,8 @@ def generate_playbook(prompt, model_name, conversation_history):
         print('\b\b\b   \b\b\b', end='', flush=True)  # Erase the dots
 
     animation_thread.join()
+
+    # Lines 38 to 54 are responsible for extracting the generated playbooks from the raw response from ChatGPT.
 
     full_response = response['choices'][0]['message']['content']
     
