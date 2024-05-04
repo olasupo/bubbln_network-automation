@@ -139,8 +139,13 @@ def main():
     while True:
         try:
             username = input("Please input the SSH username: ")
+            if not username:  # Check if username is empty
+                print("Username cannot be empty. Please try again.")
+                continue
             password = getpass.getpass("Please input the SSH password: ")
-
+            if not password:  # Check if password is empty
+                print("Password cannot be empty. Please try again.")
+                continue
             # Encrypt username and password
 
             encrypted_username = cipher_suite.encrypt(username.encode())
