@@ -42,7 +42,7 @@ Bubbln has been packaged using docker containers for easy distribution and usage
     - Debian: [Docker Engine for Debian](https://docs.docker.com/engine/install/debian/)
     - Fedora: [Docker Engine for Fedora](https://docs.docker.com/engine/install/fedora/)
 
-2. **Download the docker image** using the below command:
+2. **Download the docker image**: Create a directory for the project and download Bubbln image using the below command:
 
     ```bash
     docker pull olasupoo/bubbln:latest
