@@ -1,3 +1,5 @@
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/olasupo/bubbln_network-automation)           [![Run in Cisco Cloud IDE](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-runable-icon.svg)](https://developer.cisco.com/codeexchange/devenv/olasupo/bubbln_network-automation/)
+
 # Bubbln: An AI-driven Network Automation
 
 In the world of network engineering, automation has completely transformed the way things work. But, before automation, setting up and managing networks was a tedious job filled with challenges. Engineers had to manually type out configurations, often doing the same tasks repeatedly on different devices. This led to mistakes and wasted time.
