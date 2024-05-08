@@ -56,7 +56,26 @@ Bubbln has been packaged using docker containers for easy distribution and usage
     docker run -it --network host --name bubbln-container olasupoo/bubbln
     ```
 
-4. **Initialize Bubbln** by entering the below command:
+4. **Update the ssh_ip_addresses.txt file**: Update the ssh_addresses.txt file with the SSH IP addresses of the routers you want to configure. Bubbln will utilize this information along with the login credentials (inputted at runtime) to automatically generate a hosts.yml file required by ansible for network configuration. To do this enter the below command to edit the file:
+
+ ```bash
+ nano ssh_ip_addresses.txt
+```
+
+5.	**Obtain an OpenAPI API Key**: You may follow this guide to sign up and obtain an API key:
+
+```bash
+https://platform.openai.com/docs/quickstart?context=python
+```
+
+6.	**Utilizing a Virtualization machine of choice**, setup a network with the following basic configurations:
+
+* Enable SSH on each of the routers.
+* Configure IP addresses and enable only interfaces required for connectivity by Bubbln.
+* Configure static routes to enable Bubbln reach the routers on the network.
+* Ensure all the routers can be reached by ping and SSH from your host machine.
+
+7. **Initialize Bubbln** by entering the below command:
 
     ```bash
     python3 bubbln.py
