@@ -37,7 +37,7 @@ jsonpatch==1.33
 jsonpointer==2.4
 kiwisolver==1.4.5
 langchain==0.2.2
-langchain-community==0.0.36
+langchain-community==0.2.5
 langchain-core==0.1.50
 langchain-text-splitters==0.0.1
 langsmith==0.1.54
