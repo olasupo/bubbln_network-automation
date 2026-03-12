@@ -53,7 +53,7 @@ numexpr==2.10.0
 numpy==1.26.4
 openai==0.27.8
 openapi-schema-pydantic==1.2.4
-orjson==3.10.3
+orjson==3.11.6
 packaging==23.2
 parso==0.8.4
 pexpect==4.9.0
